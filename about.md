@@ -4,12 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I'm a PhD student in Computer Science. I work on distributed systems, in particular on large-scale storage systems.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+This blog is a place for me to practice writing and to refresh my knowledge of basic computer science concepts that come up as I read papers, news articles, or product releases. I may occasionally write about other topics (baking, cats). 
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+Please get in touch if you find any factual errors! 
+My contact information is at my academic [homepage](https://cs.princeton.edu/~theanos).
