@@ -1,0 +1,3 @@
+- ISAs
+- what is a SoC
+- big.little CPU architectures
