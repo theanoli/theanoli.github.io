@@ -1,0 +1,44 @@
+<html>
+<header><title>SOSP 2023 deadline</title></header>
+<body>
+<script>
+var end = new Date('2023-04-17T23:59:00-08:00');
+
+    var _second = 1000;
+    var _minute = _second * 60;
+    var _hour = _minute * 60;
+    var _day = _hour * 24;
+    var timer;
+
+    function showRemaining() {
+        var now = new Date();
+        var distance = end - now;
+        if (distance < 0) {
+
+            clearInterval(timer);
+            document.getElementById('countdown').innerHTML = 'EXPIRED!';
+
+            return;
+        }
+        var days = Math.floor(distance / _day);
+        var hours = Math.floor((distance % _day) / _hour);
+        var minutes = Math.floor((distance % _hour) / _minute);
+        var seconds = Math.floor((distance % _minute) / _second);
+
+	if (hours < 10) {hours = "0" + hours;}
+	if (minutes < 10) {minutes = "0" + minutes;}
+	if (seconds < 10) {seconds = "0" + seconds;}
+
+	document.getElementById('countdown').style.fontSize = "48px";
+        document.getElementById('countdown').innerHTML = days + ':';
+        document.getElementById('countdown').innerHTML += hours + ':';
+        document.getElementById('countdown').innerHTML += minutes + ':';
+        document.getElementById('countdown').innerHTML += seconds;
+	document.getElementById('countdown').innerHTML += " dd:hh:mm:ss until SOSP deadline";
+    }
+
+    timer = setInterval(showRemaining, 1000);
+</script>
+<div id="countdown"></div>
+</body>
+</html>

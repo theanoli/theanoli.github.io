@@ -1,0 +1,5 @@
+- ISAs
+- what is a SoC
+- big.little CPU architectures
+- declining gigs shipped, cost of flash: https://blocksandfiles.com/2020/12/07/storage-news-digest-nand-shipments/
+- HAMR (heat-assisted magnetic recording): https://blocksandfiles.com/2020/11/20/seagate-ceo-talks-about-big-jumps/
