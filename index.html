@@ -1,1 +1,149 @@
-hello, World!
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Theano Stavrinos</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="navbar-fixed-top.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Theano Stavrinos</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#about">About</a></li>
+	      <!--
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+		      <li><a href="#projects">All Projects</a></li>
+		<li role="separator" class="divider"></li>
+                <li><a href="#flash-cache">Flash caching</a></li>
+                <li><a href="#sequencer">Sequencer</a></li>
+              </ul>
+	      </li>
+	      -->
+	    <li><a href="#publications">Publications</a></li>
+	    <li><a href="#service">Academic Service</a></li>
+	    <li><a href="#cv">CV</a></li>
+            <li><a href="#contact">Contact</a></li>
+	    <li><a href="miscellany.html">Miscellany</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="page-header">
+        <h1 id="about">About</h1>
+        <div class="row">
+        <div class="col-md-8 col-sm-6">
+		<p class=lead>Newly-minted PhD in Computer Science!</p> 
+	<p>I earned my PhD from Princeton in May 2023. I worked with Professors <a href="http://www.cs.princeton.edu/~wlloyd/">Wyatt Lloyd</a> (Princeton University) and <a href="http://www.columbia.edu/~ebk2141/">Ethan Katz-Bassett</a> (Columbia University) on distributed systems. I was previously part of the <a href="https://nsl.cs.usc.edu/">Networked Systems Lab</a> at the University of Southern California. I am interested in high-performance storage stacks, in particular for data centers, as well as disaggregated servers and operating systems for distributed systems.</p>
+	<p>I earned a Master's degree in Computer Science from UCLA in 2016. While there, I worked with Professor Miodrag Potkonjak on energy-efficient wireless sensor networks. I also worked with visiting researcher Bastian Bloessl (then at University of Paderborn) on evaluating a software-defined radio implementation of 802.11p for vehicular ad-hoc networks. I earned a Bachelor's degree in Linguistics from the University of Chicago in 2009.</p>
+	<p>
+	Starting in July 2023, I will be a postdoctoral researcher at the University of Washington working with Thomas Anderson and Simon Peter on the <a href="https://arxiv.org/abs/2201.02120">Treehouse Project.</a> 
+	</p>
+	</div>	
+
+	<div class="col-md-4 col-sm-6">
+	    <img src="headshot.jpg" class="img-responsive">
+        </div>
+
+        </div>
+      </div>
+
+    <!-- Projects
+    <h2 id="projects">Projects</h2>
+	<h3 id="flash-cache">Caching on flash devices</h3>
+	<p>Flash-based SSDs are an attractive storage medium: they perform better than hard disks, and they are cheaper per unit of capacity than memory. However, SSDs are endurance-limited. Caching is particularly taxing on SSDs' endurance because of the randomness of cache write and delete patterns. This project explores flash abstraction layer designs that preserve SSD device lifetimes.</p>
+
+	<h3 id="sequencer">Sequencer</h3>
+	<p>Sequencers are centralized servers that are used to order events in a distributed system. This project, led by fellow PhD student <a href="http://www.cs.princeton.edu/~chodsdon">Christopher Hodsdon</a>, solves two of the limitations of single-machine sequencers: the throughput ceiling imposed by a single machine, and the possibility of holes (or gaps) in the sequence space after certain failures.</p> 
+    -->
+
+    <!-- Publications -->
+    <h2 id="publications">Publications</h2>
+    Hodsdon C, <b>Stavrinos T</b>, Katz-Bassett E, Lloyd W. "MASON: Scalable, Contiguous Sequencing for Building Consistent Services." In <i>Journal of Systems Research (JSys)</i>, 2023.<br>
+    <br>
+
+	<b>Stavrinos T</b>, Berger D, Katz-Bassett E, Lloyd W. "Don't Be a Blockhead: Zoned Namespaces Make Work on Conventional SSDs Obsolete." In <i>HotOS</i> 2021. (<a href="hotos21-stavrinos.pdf">pdf</a>, <a href="https://www.youtube.com/watch?v=NVzP-3vaWtQ">talk</a>)<br>
+    <br>
+	Pan S, <b>Stavrinos T</b>, Zhang Y, Sikaria A, Zakharov P, Sharma A, Shankar P S, Shuey M, Wareing R, Gangapuram M, Cao G, Preseau C, Singh P, Patiejunas K, Tipton JR, Katz-Bassett E, Lloyd W. "Facebook’s Tectonic Filesystem: Efficiency from Exascale." In <i>FAST</i> 2021. (<a href="fast21-pan.pdf">pdf</a>)<br>
+    <br>
+	Guo J, Xu T, <b>Stavrinos T</b>, and Potkonjak M. "Enabling environmentally-powered indoor sensor networks with dynamic routing and operation." In <i>Power and Timing Modeling, Optimization and Simulation (PATMOS)</i> 2016.<br>
+    <br>
+        Pannetier N, <b>Stavrinos T</b>, Ng P, Herbst M, Zaitsev M, Young K, Matson G, and Schuff N. "Quantitative framework for prospective motion correction evaluation." In <i>Magnetic Resonance in Medicine</i> 75, no. 2 (2016).<br>
+
+    <!-- Academic service -->
+    <h2 id="service">Academic Service</h2>
+	OSDI 2023 External Reviewer<br>
+	OSDI 2021 External Reviewer<br>
+	OSDI 2018 Topic Preview Sessions Organizer<br>
+	OSDI 2018 External Reviewer<br>
+	Princeton Systems Seminars Co-Organizer, 2017-2018<br>
+	NSDI 2018 External Reviewer<br>
+	Internet Measurement Conference (IMC) 2017 Shadow PC Member<br>
+	Internet Measurement Conference (IMC) 2017 Scribe<br>
+	SIGCOMM 2017 Topic Preview Sessions Co-Organizer<br>
+	NSDI 2017 External Reviewer<br>
+    
+    <!-- CV -->
+    <h2 id="cv">Curriculum Vitae</h2>
+    <p>Click <a href="cv.pdf">here</a> to download my CV.</p>
+
+    <!-- Contact -->
+    <h2 id="contact">Contact</h2>
+    <p>Email: theano at princeton dot edu<br>
+    <!-- <a href="https://www.linkedin.com/in/tstavrinos/">LinkedIn</a></p> -->
+
+    </div> <!-- \container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
